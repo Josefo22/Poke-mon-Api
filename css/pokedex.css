@@ -1,0 +1,67 @@
+body {
+  font-family: 'Verdana', sans-serif;
+  background-color: #e62117;
+  margin: 10px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: #fff;
+  border-radius: 15px; 
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  width: 400px;
+  padding: 10px;
+  border: 5px solid #000000;
+  text-align: center;
+  color: #333;
+}
+
+.hidden {
+  display: none;
+}
+
+form {
+  margin-bottom: 0;
+}
+
+label {
+  font-weight: bold;
+  margin-right: 10px;
+  color: #e62117;
+}
+
+input {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #e62117;
+  border-radius: 5px;
+}
+
+button {
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #e62117;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #c21807;
+}
+
+.autocomplete-suggestions {
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+.pokemon-info {
+  flex: 1;
+  overflow-y: auto;
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokémon API Demo</title>
+  <link rel="stylesheet" href="css\pokedex.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Pokedex</h1>
+    <form id="searchForm">
+      <label for="pokemonInput">Ingrese el nombre del pokemon:</label>
+      <input type="text" id="pokemonInput" required>
+      <div id="autocompleteSuggestions" class="autocomplete-suggestions"></div>
+      <button type="submit">Buscar</button>
+    </form>
+    <div id="pokemonInfo" class="hidden">
+      <h2 id="pokemonName"></h2>
+      <img id="pokemonImage" alt="Pokemon">
+      <p id="pokemonAbilities"></p>
+    </div>
+  </div>
+  <script src="api-fetch.js"></script>
+</body>
+</html>
